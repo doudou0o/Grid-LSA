@@ -178,8 +178,8 @@ public class runsample2 {
 			int value = Qtree.rangQuery(leftdown, righttop, pointlistin);
 			double upb = value - aerfa*(Math.abs(cobasic-original_position[0])-Max_Range[0]);
 			if (upb <= I)  continue;
-			//Sort(pointlistin);//TODO
-			ComparatorListsp compare = new ComparatorListsp();
+			
+			ComparatorListsp compare = new ComparatorListsp(cobasic,h);
 			System.setProperty("java.util.Arrays.useLegacyMergeSort", "true");
 			Collections.sort(pointlistin, compare);
 			
@@ -579,8 +579,8 @@ public class runsample2 {
 			changetoRelativepos(data1pos);
 			changetoRelativepos(data2pos);
 			double pos1, pos2;
-			pos1 = min(data1pos[0], data1pos[1] * ratio);
-			pos2 = min(data2pos[0], data2pos[1] * ratio);
+			pos1 = min(data1pos[0] * ratio, data1pos[1]);
+			pos2 = min(data2pos[0] * ratio, data2pos[1]);
 
 			if (pos1 < pos2)
 				return -1;
@@ -603,6 +603,14 @@ public class runsample2 {
 
 	}
 	private class ComparatorListsp implements Comparator {
+		private double cobasic;
+		private int h; 
+		public ComparatorListsp(double cobasic, int h) {
+			super();
+			this.cobasic = cobasic;
+			this.h = h;
+		}
+
 		@Override
 		public int compare(Object o1, Object o2) {
 			point p1 = (point) o1;
@@ -616,15 +624,41 @@ public class runsample2 {
 			changetoRelativepos(data1pos);
 			changetoRelativepos(data2pos);
 			double pos1, pos2;
-			pos1 = min(data1pos[0], data1pos[1] * ratio);
-			pos2 = min(data2pos[0], data2pos[1] * ratio);
+			pos1 = max(data1pos[0] * ratio, data1pos[1] );
+			pos2 = max(data2pos[0] * ratio, data2pos[1] );
 
-			if (pos1 < pos2)
+			if (pos1 > pos2)
 				return -1;
 			if ((pos1 == pos2) && (p1.ID < p2.ID))
 				return -1;
 			return 1;
 //			return p1.ID - p2.ID;
+		}
+		private double max(double a, double b) {
+			return a>b?a:b;
+		}
+
+		private void changetoRelativepos(double[] data_pos) {
+			switch (h) {
+			case 1:
+				data_pos[0] = Math.abs( cobasic - data_pos[0] );
+				data_pos[1] = Math.abs( data_pos[1] - original_position[1] )*2;
+				break;
+			case 2:
+				data_pos[1] = Math.abs( cobasic - data_pos[1] );
+				data_pos[0] = Math.abs( data_pos[0] - original_position[0] )*2;
+				break;
+			case 3:
+				data_pos[0] = Math.abs( data_pos[0] - cobasic );
+				data_pos[1] = Math.abs( original_position[1] - data_pos[1] )*2;
+				break;
+			case 4:
+				data_pos[1] = Math.abs( data_pos[1] - cobasic );
+				data_pos[0] = Math.abs( original_position[0] - data_pos[0] )*2;
+				break;
+			default: System.err.println("change pos wrong");
+				break;
+			}
 		}
 	}
 }

@@ -200,20 +200,51 @@ public class runsample2 {
 					recordbest(cur_score, cur_Range, righttop, leftdown);//r1/r2/crosspoint
 				}
 				point cur_point = pointlist.get(iterator);
-				change_curRange(righttop, leftdown, cur_Range, cur_value--,cur_point,h);
+				change_curRange(righttop, leftdown, cur_Range, cur_value--,cur_point,codis,h);
 				upb=upb - pre_point_value;
 				pre_point_value = cur_point.value;
 			}
 		}
 	}
 	private void change_curRange(double[] righttop, double[] leftdown, double[] cur_Range,
-			int j, point cur_point , int h) {
+			int j, point cur_point ,double codis, int h) {
 		double a1,a2,a3,a4;
 		a1 = righttop[0] - cur_point.xcoordinate;
 		a2 = righttop[1] - cur_point.ycoordinate;
 		a3 = cur_point.xcoordinate - leftdown[0];
 		a4 = cur_point.ycoordinate - leftdown[1];
-//		double dis = min(a1,a2,a3,a4,h);//TODO
+		get_cur_Range(a1,a2,a3,a4,h,cur_Range,codis);
+	}
+	private void get_cur_Range(double a1, double a2, double a3, double a4,
+			int h, double[] cur_Range,double codis) {
+		double length = 0,width = 0;
+		switch (h) {
+		case 1:
+			length = a1;
+			width = codis*2;
+			break;
+		case 2:
+			length = codis*2;
+			width = a2;
+			break;
+		case 3:
+			length = a3;
+			width = codis*2;
+			break;
+		case 4:
+			length = codis*2;
+			width = a4;
+			break;
+		default:
+			break;
+		}
+		if(length*ratio > width){
+			cur_Range[0] = length;
+			cur_Range[1] = length*ratio;
+		}else{
+			cur_Range[0] = width / ratio;
+			cur_Range[1] = width;
+		}
 	}
 
 	private void my_query(GNode[][] subgrid,int q) {

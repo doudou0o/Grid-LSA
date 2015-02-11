@@ -197,9 +197,9 @@ public class runsample2 {
 				double cur_score = new calculation().calculate_score(righttop,leftdown,
 						original_position, original_Range, cur_Range,cur_value);
 				if (cur_score > I) {
-					recordbest(cur_score, cur_Range, righttop, leftdown);//r1/r2/crosspoint
+					recordbest(cur_score, cur_Range, righttop, leftdown);//r1/r2
 				}
-				point cur_point = pointlist.get(iterator);
+				point cur_point = pointlist.get(iterator++);
 				change_curRange(righttop, leftdown, cur_Range, cur_value--,cur_point,codis,h);
 				upb=upb - pre_point_value;
 				pre_point_value = cur_point.value;
@@ -207,32 +207,61 @@ public class runsample2 {
 		}
 	}
 	private void change_curRange(double[] righttop, double[] leftdown, double[] cur_Range,
-			int j, point cur_point ,double codis, int h) {
+			int j, point cur_point ,double cobasic, int h) {
 		double a1,a2,a3,a4;
 		a1 = righttop[0] - cur_point.xcoordinate;
 		a2 = righttop[1] - cur_point.ycoordinate;
 		a3 = cur_point.xcoordinate - leftdown[0];
 		a4 = cur_point.ycoordinate - leftdown[1];
-		get_cur_Range(a1,a2,a3,a4,h,cur_Range,codis);
+		
+		get_cur_Range(a1,a2,a3,a4,h,cur_Range,cur_point);
+		
+		switch (h) {
+		case 1:
+			righttop[0] = cobasic;
+			righttop[1] = original_position[1]+0.5*cur_Range[1];
+			break;
+		case 2:
+			righttop[0] = original_position[0]-0.5*cur_Range[0];
+			righttop[1] = cobasic;
+			break;
+		case 3:
+			righttop[0] = cobasic + cur_Range[0];
+			righttop[1] = original_position[1]+0.5*cur_Range[1];
+			break;
+		case 4:
+			righttop[0] = original_position[0]+0.5*cur_Range[0];
+			righttop[1] = cobasic + cur_Range[1];
+			break;
+		default:
+			break;
+		}
+		leftdown[0] = righttop[0] - cur_Range[0];
+		leftdown[1] = righttop[1] - cur_Range[1];
 	}
 	private void get_cur_Range(double a1, double a2, double a3, double a4,
-			int h, double[] cur_Range,double codis) {
+			int h, double[] cur_Range,point cur_point) {
 		double length = 0,width = 0;
+		if (cur_Range[0] == original_Range[0]) {
+			cur_Range[0] = cur_Range[0] - 1 ;
+			cur_Range[1] = cur_Range[1] - ratio;
+			return;
+		}
 		switch (h) {
 		case 1:
 			length = a1;
-			width = codis*2;
+			width = Math.abs( cur_point.ycoordinate-original_position[1] )*2 ;
 			break;
 		case 2:
-			length = codis*2;
+			length = Math.abs( cur_point.xcoordinate-original_position[0])*2 ;
 			width = a2;
 			break;
 		case 3:
 			length = a3;
-			width = codis*2;
+			width = Math.abs( cur_point.ycoordinate-original_position[1] )*2 ;
 			break;
 		case 4:
-			length = codis*2;
+			length = Math.abs( cur_point.xcoordinate-original_position[0])*2 ;
 			width = a4;
 			break;
 		default:
@@ -244,6 +273,10 @@ public class runsample2 {
 		}else{
 			cur_Range[0] = width / ratio;
 			cur_Range[1] = width;
+		}
+		if (cur_Range[0] < original_Range[0]) {
+			cur_Range[0] = original_Range[0];
+			cur_Range[1] = original_Range[1];
 		}
 	}
 

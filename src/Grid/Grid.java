@@ -257,7 +257,7 @@ public class Grid {
 					if (gp.xcoordinate>=leftdown[0]&&gp.xcoordinate<=righttop[0]
 							&&gp.ycoordinate>=leftdown[1]&&gp.ycoordinate<=righttop[1]) {
 						if(ansmap.containsKey(gp.ID)){
-							System.out.println("warn: there is a repeating point. please watch");
+							//System.out.println("warn: there is a repeating point. please watch");
 							continue;
 						}
 						ansmap.put(gp.ID, gp);

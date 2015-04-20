@@ -32,8 +32,9 @@ import QuadTree.Qpoint;
 import QuadTree.QuadTree;
 
 public class runsample {
-	private String datafile = "data0/Gaussian_10w.txt";
-//	private String datafile = "data0/uniform_50w.txt";
+	private String datafile = "data0/Gaussian_40w.txt";
+//	private String datafile = "data0/Gaussian_40w.txt";
+//	private String datafile = "data0/uniform_40w.txt";
 	private String queryfile = "queries";
 
 	private Grid g_object;;
@@ -79,7 +80,7 @@ public class runsample {
 
 			g_object = new Grid(most_topright, most_downleft, Node_Size,
 					Max_Range, original_position);
-			Qtree = new QuadTree(20, most_downleft, most_topright);
+			Qtree = new QuadTree(25, most_downleft, most_topright);
 			long middle = System.currentTimeMillis();
 
 			readfile(datafile);
@@ -109,6 +110,18 @@ public class runsample {
 		my_query(g_object.grid_top_left  ,2);
 		my_query(g_object.grid_down_left ,3);
 		my_query(g_object.grid_down_right,4);
+		
+		long specialstart = System.currentTimeMillis();
+		logger.info("find_special time start: "+specialstart);
+		try {
+			//findspecial(); 
+		} catch (Exception e) {
+			
+		}
+		long specialend = System.currentTimeMillis();
+		logger.info("find_special time end: "  +specialend);
+		logger.info("find_special time execute"  +((specialend-specialstart)/ 1000.0f));
+
 	}
 
 	private void my_query(GNode[][] subgrid, int q) {
@@ -158,9 +171,9 @@ public class runsample {
 				
 				int valuesum = 0;
 				List<point> pointlist = new ArrayList<point>();
-
-					 valuesum = Qtree.rangQuery(r2, r1, pointlist);
-
+					//TODO
+					 //valuesum = Qtree.rangQuery(r2, r1, pointlist);
+					 valuesum = g_object.rangQuery(r2, r1, pointlist);
 				int getvalue = valuesum;
 
 				// prune line
@@ -311,17 +324,20 @@ public class runsample {
 						new FileInputStream(file), encoding);// 考虑到编码格式
 				BufferedReader bufferedReader = new BufferedReader(read);
 				String lineTxt = null;
+				DataProcess DP = new DataProcess();
 				while ((lineTxt = bufferedReader.readLine()) != null) {
 					StringTokenizer st = new StringTokenizer(lineTxt);
 					int value = new Integer(st.nextToken()).intValue();
 					int ID = new Integer(st.nextToken()).intValue();
 					double xco = new Double(st.nextToken()).doubleValue();
 					double yco = new Double(st.nextToken()).doubleValue();
+					if( DP.processData(xco, yco) )  continue;//if your data has repeated raws it will needed
 					Gpoint p = new Gpoint(value, ID, xco, yco);
 					Qpoint q = new Qpoint(value, ID, xco, yco);
 					g_object.Insert_Gpoint(p);
 					Qtree.Insert(q);
 				}
+				DP.destory();
 				read.close();
 			} else {
 				System.out.println("找不到指定的文件");
@@ -475,4 +491,230 @@ public class runsample {
 		}
 
 	}
+	
+	
+	private void findspecial() {
+		List<point> pointlist = new ArrayList<point>();
+		double[] leftdown;
+		double[] righttop;
+		
+		leftdown = new double[]{original_position[0],original_position[1]-0.5*Max_Range[1]};
+		righttop = new double[]{1000000,original_position[1]+0.5*Max_Range[1]};
+		Qtree.rangQuery(leftdown, righttop, pointlist);
+		findspecial(pointlist,1);
+		
+		leftdown = new double[]{original_position[0]-0.5*Max_Range[0],original_position[1]+0.5*Max_Range[1]};
+		righttop = new double[]{original_position[0]+0.5*Max_Range[0],1000000};
+		Qtree.rangQuery(leftdown, righttop, pointlist);
+		findspecial(pointlist,2);
+		
+		leftdown = new double[]{0,original_position[1]-0.5*Max_Range[1]};
+		righttop = new double[]{original_position[0]-0.5*Max_Range[0],original_position[1]+0.5*Max_Range[1]};
+		Qtree.rangQuery(leftdown, righttop, pointlist);
+		findspecial(pointlist,3);
+		
+		leftdown = new double[]{original_position[0]-0.5*Max_Range[0],0};
+		righttop = new double[]{original_position[0]+0.5*Max_Range[0],original_position[1]-0.5*Max_Range[1]};
+		Qtree.rangQuery(leftdown, righttop, pointlist);
+		findspecial(pointlist,4);
+	}
+
+	private void findspecial(List<point> pointlist,int h) {
+		for (int index = 0; index < pointlist.size(); index++) {
+			point p = pointlist.get(index);
+			double cobasic,codis;
+			if(h==1||h==3){
+				cobasic = p.xcoordinate;
+				codis = Math.abs( p.ycoordinate - original_position[1] );
+			}
+			else {
+				cobasic = p.ycoordinate;
+				codis = Math.abs( p.xcoordinate - original_position[0] );
+			}
+
+			double leftdown[] = new double[2];
+			double righttop[] = new double[2];
+			switch (h) {
+			case 1:
+				leftdown[0] = cobasic-Max_Range[0];leftdown[1] = original_position[1]-Max_Range[1]/2;
+				break;
+			case 2:
+				leftdown[0] = original_position[0]-Max_Range[0];leftdown[1] = cobasic-Max_Range[1]/2;
+				break;
+			case 3:
+				leftdown[0] = cobasic;	leftdown[1] = original_position[1]-Max_Range[1]/2;
+				break;
+			case 4:
+				leftdown[0] = original_position[0]-Max_Range[0];	leftdown[1] = cobasic;
+				break;
+			default:
+				break;
+			}
+			righttop[0] = leftdown[0]+Max_Range[0];
+			righttop[1] = leftdown[1]+Max_Range[1];
+			List<point> pointlistin = new ArrayList<point>();
+			int value = Qtree.rangQuery(leftdown, righttop, pointlistin);
+			double upb = value - aerfa*(Math.abs(cobasic-original_position[0])-Max_Range[0]);
+			if (upb <= I)  continue;
+			
+			ComparatorListsp compare = new ComparatorListsp(cobasic,h);
+			System.setProperty("java.util.Arrays.useLegacyMergeSort", "true");
+			Collections.sort(pointlistin, compare);
+			
+			double[] cur_Range = Max_Range;
+			int cur_value = value;
+			int iterator = 0;
+			int pre_point_value = 0;
+						
+			while( upb>I && iterator<pointlistin.size() ){
+				if( h==1 || h==3){
+					if( 2*codis > cur_Range[1] || original_Range[1]>cur_Range[1])break;
+				}else{
+					if( 2*codis > cur_Range[0] || original_Range[0]>cur_Range[0])break;
+				}
+				double cur_score = new calculation().calculate_score(righttop,leftdown,
+						original_position, original_Range, cur_Range,cur_value);
+				if (cur_score > I) {
+					recordbest(cur_score, cur_Range, righttop, leftdown);//r1/r2
+				}
+				point cur_point = pointlistin.get(iterator);iterator++;
+				change_curRange(righttop, leftdown, cur_Range, cur_value--,cur_point,codis,h);
+				upb=upb - pre_point_value;
+				pre_point_value = cur_point.value;
+			}
+		}
+	}
+	private void change_curRange(double[] righttop, double[] leftdown, double[] cur_Range,
+			int j, point cur_point ,double cobasic, int h) {
+		double a1,a2,a3,a4;
+		a1 = righttop[0] - cur_point.xcoordinate;
+		a2 = righttop[1] - cur_point.ycoordinate;
+		a3 = cur_point.xcoordinate - leftdown[0];
+		a4 = cur_point.ycoordinate - leftdown[1];
+		
+		get_cur_Range(a1,a2,a3,a4,h,cur_Range,cur_point);
+		
+		switch (h) {
+		case 1:
+			righttop[0] = cobasic;
+			righttop[1] = original_position[1]+0.5*cur_Range[1];
+			break;
+		case 2:
+			righttop[0] = original_position[0]-0.5*cur_Range[0];
+			righttop[1] = cobasic;
+			break;
+		case 3:
+			righttop[0] = cobasic + cur_Range[0];
+			righttop[1] = original_position[1]+0.5*cur_Range[1];
+			break;
+		case 4:
+			righttop[0] = original_position[0]+0.5*cur_Range[0];
+			righttop[1] = cobasic + cur_Range[1];
+			break;
+		default:
+			break;
+		}
+		leftdown[0] = righttop[0] - cur_Range[0];
+		leftdown[1] = righttop[1] - cur_Range[1];
+	}
+	private void get_cur_Range(double a1, double a2, double a3, double a4,
+			int h, double[] cur_Range,point cur_point) {
+		double length = 0,width = 0;
+		if (cur_Range[0] == original_Range[0]) {
+			cur_Range[0] = cur_Range[0] - 1 ;
+			cur_Range[1] = cur_Range[1] - ratio;
+			return;
+		}
+		switch (h) {
+		case 1:
+			length = a1;
+			width = Math.abs( cur_point.ycoordinate-original_position[1] )*2 ;
+			break;
+		case 2:
+			length = Math.abs( cur_point.xcoordinate-original_position[0])*2 ;
+			width = a2;
+			break;
+		case 3:
+			length = a3;
+			width = Math.abs( cur_point.ycoordinate-original_position[1] )*2 ;
+			break;
+		case 4:
+			length = Math.abs( cur_point.xcoordinate-original_position[0])*2 ;
+			width = a4;
+			break;
+		default:
+			break;
+		}
+		if(length*ratio > width){
+			cur_Range[0] = length;
+			cur_Range[1] = length*ratio;
+		}else{
+			cur_Range[0] = width / ratio;
+			cur_Range[1] = width;
+		}
+		if (cur_Range[0] < original_Range[0]) {
+			cur_Range[0] = original_Range[0];
+			cur_Range[1] = original_Range[1];
+		}
+	}
+	private class ComparatorListsp implements Comparator {
+		private double cobasic;
+		private int h; 
+		public ComparatorListsp(double cobasic, int h) {
+			super();
+			this.cobasic = cobasic;
+			this.h = h;
+		}
+
+		@Override
+		public int compare(Object o1, Object o2) {
+			point p1 = (point) o1;
+			point p2 = (point) o2;
+			double[] data1pos = new double[2];
+			double[] data2pos = new double[2];
+			data1pos[0] = p1.xcoordinate;
+			data1pos[1] = p1.ycoordinate;
+			data2pos[0] = p2.xcoordinate;
+			data2pos[1] = p2.ycoordinate;
+			changetoRelativepos(data1pos);
+			changetoRelativepos(data2pos);
+			double pos1, pos2;
+			pos1 = max(data1pos[0] * ratio, data1pos[1] );
+			pos2 = max(data2pos[0] * ratio, data2pos[1] );
+
+			if (pos1 > pos2)
+				return -1;
+			if ((pos1 == pos2) && (p1.ID < p2.ID))
+				return -1;
+			return 1;
+//			return p1.ID - p2.ID;
+		}
+		private double max(double a, double b) {
+			return a>b?a:b;
+		}
+
+		private void changetoRelativepos(double[] data_pos) {
+			switch (h) {
+			case 1:
+				data_pos[0] = Math.abs( cobasic - data_pos[0] );
+				data_pos[1] = Math.abs( data_pos[1] - original_position[1] )*2;
+				break;
+			case 2:
+				data_pos[1] = Math.abs( cobasic - data_pos[1] );
+				data_pos[0] = Math.abs( data_pos[0] - original_position[0] )*2;
+				break;
+			case 3:
+				data_pos[0] = Math.abs( data_pos[0] - cobasic );
+				data_pos[1] = Math.abs( original_position[1] - data_pos[1] )*2;
+				break;
+			case 4:
+				data_pos[1] = Math.abs( data_pos[1] - cobasic );
+				data_pos[0] = Math.abs( original_position[0] - data_pos[0] )*2;
+				break;
+			default: System.err.println("change pos wrong");
+				break;
+			}
+		}
+	}
+
 }

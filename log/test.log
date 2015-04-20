@@ -1,195 +1,336 @@
-14:52:12.603 INFO  main.runsample -    
-14:52:12.603 INFO  main.runsample - data0/uniform_50w.txt
-14:52:12.603 INFO  main.runsample - *********new query now*********
-14:52:12.603 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 550000 550000
-16:46:40.812 ERROR main.runsample - **********
-16:46:40.812 ERROR main.runsample - I=15.193881469254132
-16:46:40.812 ERROR main.runsample - range= length:3259.3610000000335width:3259.3610000000335
-16:46:40.812 ERROR main.runsample - position= 501587.0944,596281.6465
-16:46:40.812 ERROR main.runsample - **********
-16:46:40.812 ERROR main.runsample - middle-Second: 0.0
-16:46:40.812 ERROR main.runsample - Minutes: 114.470146
-16:46:40.812 ERROR main.runsample - Second: 6868.209
-16:46:40.812 ERROR main.runsample - cross-point 503216.7749 597911.327
-19:22:33.314 INFO  main.runsample -    
-19:22:33.314 INFO  main.runsample - data0/uniform_40w.txt
-19:22:33.314 INFO  main.runsample - *********new query now*********
-19:22:33.314 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 550000 550000
-20:41:25.528 ERROR main.runsample - **********
-20:41:25.528 ERROR main.runsample - I=11.169798553697849
-20:41:25.528 ERROR main.runsample - range= length:2562.150399999984width:2562.150399999984
-20:41:25.528 ERROR main.runsample - position= 883513.0942,341690.6074
-20:41:25.528 ERROR main.runsample - **********
-20:41:25.528 ERROR main.runsample - middle-Second: 0.0
-20:41:25.528 ERROR main.runsample - Minutes: 78.87023
-20:41:25.528 ERROR main.runsample - Second: 4732.214
-20:41:25.528 ERROR main.runsample - cross-point 884794.1694 340409.5322
-20:41:52.986 INFO  main.runsample -    
-20:41:53.001 INFO  main.runsample - data0/uniform_30w.txt
-20:41:53.001 INFO  main.runsample - *********new query now*********
-20:41:53.001 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 550000 550000
-21:26:11.589 ERROR main.runsample - **********
-21:26:11.589 ERROR main.runsample - I=8.161473587858385
-21:26:11.589 ERROR main.runsample - range= length:2284.415900000022width:2284.415900000022
-21:26:11.589 ERROR main.runsample - position= 475048.06095,741950.2389499999
-21:26:11.589 ERROR main.runsample - **********
-21:26:11.589 ERROR main.runsample - middle-Second: 0.0
-21:26:11.589 ERROR main.runsample - Minutes: 44.3098
-21:26:11.589 ERROR main.runsample - Second: 2658.588
-21:26:11.589 ERROR main.runsample - cross-point 473905.853 743092.4469
-21:34:00.343 INFO  main.runsample -    
-21:34:00.343 INFO  main.runsample - data0/uniform_20w.txt
-21:34:00.343 INFO  main.runsample - *********new query now*********
-21:34:00.343 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 550000 550000
-21:51:37.042 ERROR main.runsample - **********
-21:51:37.042 ERROR main.runsample - I=7.000812736439948
-21:51:37.042 ERROR main.runsample - range= length:2142.3655999999028width:2142.3655999999028
-21:51:37.042 ERROR main.runsample - position= 698628.853,581273.1462000001
-21:51:37.042 ERROR main.runsample - **********
-21:51:37.042 ERROR main.runsample - middle-Second: 0.0
-21:51:37.042 ERROR main.runsample - Minutes: 17.61165
-21:51:37.042 ERROR main.runsample - Second: 1056.699
-21:51:37.042 ERROR main.runsample - cross-point 699700.0358 582344.329
-21:55:59.092 INFO  main.runsample -    
-21:55:59.092 INFO  main.runsample - data0/uniform_10w.txt
-21:55:59.092 INFO  main.runsample - *********new query now*********
-21:55:59.092 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 550000 550000
-22:01:04.431 ERROR main.runsample - **********
-22:01:04.431 ERROR main.runsample - I=5.130676922761487
-22:01:04.431 ERROR main.runsample - range= length:2137.0478000000585width:2137.0478000000585
-22:01:04.431 ERROR main.runsample - position= 478219.97510000004,610222.8127
-22:01:04.431 ERROR main.runsample - **********
-22:01:04.431 ERROR main.runsample - middle-Second: 0.0
-22:01:04.431 ERROR main.runsample - Minutes: 5.088983
-22:01:04.431 ERROR main.runsample - Second: 305.339
-22:01:04.431 ERROR main.runsample - cross-point 477151.4512 611291.3366
-22:02:37.955 INFO  main.runsample -    
-22:02:37.955 INFO  main.runsample - data0/uniform_50w.txt
-22:02:37.955 INFO  main.runsample - *********new query now*********
-22:02:37.955 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 4000 4000
-22:02:42.806 ERROR main.runsample - **********
-22:02:42.806 ERROR main.runsample - I=15.193881469254132
-22:02:42.806 ERROR main.runsample - range= length:3259.3610000000335width:3259.3610000000335
-22:02:42.806 ERROR main.runsample - position= 501587.0944,596281.6465
-22:02:42.806 ERROR main.runsample - **********
-22:02:42.806 ERROR main.runsample - middle-Second: 0.031
-22:02:42.806 ERROR main.runsample - Minutes: 0.08085
-22:02:42.806 ERROR main.runsample - Second: 4.851
-22:02:42.806 ERROR main.runsample - cross-point 503216.7749 597911.327
-22:17:00.577 INFO  main.runsample -    
-22:17:00.577 INFO  main.runsample - data0/uniform_40w.txt
-22:17:00.577 INFO  main.runsample - *********new query now*********
-22:17:00.577 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 4000 4000
-22:17:04.446 ERROR main.runsample - **********
-22:17:04.446 ERROR main.runsample - I=10.162877777831905
-22:17:04.446 ERROR main.runsample - range= length:2096.224500000011width:2096.224500000011
-22:17:04.446 ERROR main.runsample - position= 688220.21815,607769.80855
-22:17:04.446 ERROR main.runsample - **********
-22:17:04.446 ERROR main.runsample - middle-Second: 0.031
-22:17:04.446 ERROR main.runsample - Minutes: 0.06448333
-22:17:04.446 ERROR main.runsample - Second: 3.869
-22:17:04.446 ERROR main.runsample - cross-point 689268.3304 608817.9208
-22:17:19.844 INFO  main.runsample -    
-22:17:19.859 INFO  main.runsample - data0/uniform_30w.txt
-22:17:19.859 INFO  main.runsample - *********new query now*********
-22:17:19.859 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 4000 4000
-22:17:22.511 ERROR main.runsample - **********
-22:17:22.511 ERROR main.runsample - I=7.90354433588472
-22:17:22.511 ERROR main.runsample - range= length:2090.2447000000393width:2090.2447000000393
-22:17:22.511 ERROR main.runsample - position= 485020.00315,407440.16965
-22:17:22.511 ERROR main.runsample - **********
-22:17:22.511 ERROR main.runsample - middle-Second: 0.032
-22:17:22.511 ERROR main.runsample - Minutes: 0.0442
-22:17:22.511 ERROR main.runsample - Second: 2.652
-22:17:22.511 ERROR main.runsample - cross-point 486065.1255 406395.0473
-22:17:42.482 INFO  main.runsample -    
-22:17:42.482 INFO  main.runsample - data0/uniform_20w.txt
-22:17:42.482 INFO  main.runsample - *********new query now*********
-22:17:42.482 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 4000 4000
-22:17:44.152 ERROR main.runsample - **********
-22:17:44.152 ERROR main.runsample - I=7.000812736439948
-22:17:44.152 ERROR main.runsample - range= length:2142.3655999999028width:2142.3655999999028
-22:17:44.152 ERROR main.runsample - position= 698628.853,581273.1462000001
-22:17:44.152 ERROR main.runsample - **********
-22:17:44.152 ERROR main.runsample - middle-Second: 0.032
-22:17:44.152 ERROR main.runsample - Minutes: 0.027833333
-22:17:44.152 ERROR main.runsample - Second: 1.67
-22:17:44.152 ERROR main.runsample - cross-point 699700.0358 582344.329
-22:18:39.205 INFO  main.runsample -    
-22:18:39.205 INFO  main.runsample - data0/uniform_10w.txt
-22:18:39.205 INFO  main.runsample - *********new query now*********
-22:18:39.205 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 4000 4000
-22:18:40.063 ERROR main.runsample - **********
-22:18:40.063 ERROR main.runsample - I=5.130676922761487
-22:18:40.063 ERROR main.runsample - range= length:2137.0478000000585width:2137.0478000000585
-22:18:40.063 ERROR main.runsample - position= 478219.97510000004,610222.8127
-22:18:40.063 ERROR main.runsample - **********
-22:18:40.063 ERROR main.runsample - middle-Second: 0.031
-22:18:40.063 ERROR main.runsample - Minutes: 0.0143
-22:18:40.063 ERROR main.runsample - Second: 0.858
-22:18:40.063 ERROR main.runsample - cross-point 477151.4512 611291.3366
-22:19:18.924 INFO  main.runsample -    
-22:19:18.924 INFO  main.runsample - data0/uniform_50w.txt
-22:19:18.924 INFO  main.runsample - *********new query now*********
-22:19:18.924 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 4000 4000
-22:19:23.404 ERROR main.runsample - **********
-22:19:23.404 ERROR main.runsample - I=15.193881469254132
-22:19:23.404 ERROR main.runsample - range= length:3259.3610000000335width:3259.3610000000335
-22:19:23.404 ERROR main.runsample - position= 501587.0944,596281.6465
-22:19:23.404 ERROR main.runsample - **********
-22:19:23.404 ERROR main.runsample - middle-Second: 0.031
-22:19:23.404 ERROR main.runsample - Minutes: 0.074666664
-22:19:23.404 ERROR main.runsample - Second: 4.48
-22:19:23.404 ERROR main.runsample - cross-point 503216.7749 597911.327
-22:19:38.287 INFO  main.runsample -    
-22:19:38.303 INFO  main.runsample - data0/uniform_40w.txt
-22:19:38.303 INFO  main.runsample - *********new query now*********
-22:19:38.303 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 4000 4000
-22:19:42.078 ERROR main.runsample - **********
-22:19:42.078 ERROR main.runsample - I=10.162877777831905
-22:19:42.078 ERROR main.runsample - range= length:2096.224500000011width:2096.224500000011
-22:19:42.078 ERROR main.runsample - position= 688220.21815,607769.80855
-22:19:42.078 ERROR main.runsample - **********
-22:19:42.078 ERROR main.runsample - middle-Second: 0.031
-22:19:42.078 ERROR main.runsample - Minutes: 0.062916666
-22:19:42.078 ERROR main.runsample - Second: 3.775
-22:19:42.078 ERROR main.runsample - cross-point 689268.3304 608817.9208
-22:20:01.517 INFO  main.runsample -    
-22:20:01.532 INFO  main.runsample - data0/uniform_30w.txt
-22:20:01.532 INFO  main.runsample - *********new query now*********
-22:20:01.532 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 4000 4000
-22:20:04.247 ERROR main.runsample - **********
-22:20:04.247 ERROR main.runsample - I=7.90354433588472
-22:20:04.247 ERROR main.runsample - range= length:2090.2447000000393width:2090.2447000000393
-22:20:04.247 ERROR main.runsample - position= 485020.00315,407440.16965
-22:20:04.247 ERROR main.runsample - **********
-22:20:04.247 ERROR main.runsample - middle-Second: 0.032
-22:20:04.247 ERROR main.runsample - Minutes: 0.04525
-22:20:04.247 ERROR main.runsample - Second: 2.715
-22:20:04.247 ERROR main.runsample - cross-point 486065.1255 406395.0473
-22:20:21.253 INFO  main.runsample -    
-22:20:21.253 INFO  main.runsample - data0/uniform_20w.txt
-22:20:21.253 INFO  main.runsample - *********new query now*********
-22:20:21.253 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 4000 4000
-22:20:23.094 ERROR main.runsample - **********
-22:20:23.094 ERROR main.runsample - I=7.000812736439948
-22:20:23.094 ERROR main.runsample - range= length:2142.3655999999028width:2142.3655999999028
-22:20:23.094 ERROR main.runsample - position= 698628.853,581273.1462000001
-22:20:23.094 ERROR main.runsample - **********
-22:20:23.094 ERROR main.runsample - middle-Second: 0.031
-22:20:23.094 ERROR main.runsample - Minutes: 0.030683333
-22:20:23.094 ERROR main.runsample - Second: 1.841
-22:20:23.094 ERROR main.runsample - cross-point 699700.0358 582344.329
-22:20:38.367 INFO  main.runsample -    
-22:20:38.383 INFO  main.runsample - data0/uniform_10w.txt
-22:20:38.383 INFO  main.runsample - *********new query now*********
-22:20:38.383 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 4000 4000
-22:20:39.256 ERROR main.runsample - **********
-22:20:39.256 ERROR main.runsample - I=5.130676922761487
-22:20:39.256 ERROR main.runsample - range= length:2137.0478000000585width:2137.0478000000585
-22:20:39.256 ERROR main.runsample - position= 478219.97510000004,610222.8127
-22:20:39.256 ERROR main.runsample - **********
-22:20:39.256 ERROR main.runsample - middle-Second: 0.031
-22:20:39.256 ERROR main.runsample - Minutes: 0.01455
-22:20:39.256 ERROR main.runsample - Second: 0.873
-22:20:39.256 ERROR main.runsample - cross-point 477151.4512 611291.3366
+18:13:36.038 INFO  main.runsample -    
+18:13:36.038 INFO  main.runsample - data0/Gaussian_40w.txt
+18:13:36.038 INFO  main.runsample - *********new query now*********
+18:13:36.038 INFO  main.runsample - 1 2000 2000 500000 500000 4000 4000 0.00001 0.000001 600000 600000
+18:49:59.964 INFO  main.runsample - find_special time start: 1427885399964
+18:49:59.964 INFO  main.runsample - find_special time end: 1427885399964
+18:49:59.964 INFO  main.runsample - find_special time execute0.0
+18:49:59.964 ERROR main.runsample - **********
+18:49:59.964 ERROR main.runsample - I=129.7280358551385
+18:49:59.964 ERROR main.runsample - range= length:3995.842799999984width:3995.842799999984
+18:49:59.964 ERROR main.runsample - position= 476856.5682,519896.7134
+18:49:59.964 ERROR main.runsample - **********
+18:49:59.964 ERROR main.runsample - middle-Second: 0.0
+18:49:59.964 ERROR main.runsample - Minutes: 36.398766
+18:49:59.964 ERROR main.runsample - Second: 2183.926
+18:49:59.964 ERROR main.runsample - cross-point 474858.6468 521894.6348
+18:49:59.964 INFO  main.runsample -    
+18:49:59.964 INFO  main.runsample - data0/Gaussian_40w.txt
+18:49:59.964 INFO  main.runsample - *********new query now*********
+18:49:59.964 INFO  main.runsample - 1 2000 2000 510000 510000 4000 4000 0.00001 0.000001 600000 600000
+19:24:36.084 INFO  main.runsample - find_special time start: 1427887476084
+19:24:36.084 INFO  main.runsample - find_special time end: 1427887476084
+19:24:36.084 INFO  main.runsample - find_special time execute0.0
+19:24:36.084 ERROR main.runsample - **********
+19:24:36.084 ERROR main.runsample - I=129.6873455348998
+19:24:36.084 ERROR main.runsample - range= length:3995.842799999984width:3995.842799999984
+19:24:36.084 ERROR main.runsample - position= 476856.5682,519896.7134
+19:24:36.084 ERROR main.runsample - **********
+19:24:36.084 ERROR main.runsample - middle-Second: 0.0
+19:24:36.084 ERROR main.runsample - Minutes: 34.602
+19:24:36.084 ERROR main.runsample - Second: 2076.12
+19:24:36.084 ERROR main.runsample - cross-point 474858.6468 521894.6348
+19:24:36.084 INFO  main.runsample -    
+19:24:36.084 INFO  main.runsample - data0/Gaussian_40w.txt
+19:24:36.084 INFO  main.runsample - *********new query now*********
+19:24:36.084 INFO  main.runsample - 1 2000 2000 520000 490000 4000 4000 0.00001 0.000001 600000 600000
+20:03:49.413 INFO  main.runsample - find_special time start: 1427889829413
+20:03:49.413 INFO  main.runsample - find_special time end: 1427889829413
+20:03:49.413 INFO  main.runsample - find_special time execute0.0
+20:03:49.413 ERROR main.runsample - **********
+20:03:49.413 ERROR main.runsample - I=129.5083432630573
+20:03:49.413 ERROR main.runsample - range= length:3995.842799999984width:3995.842799999984
+20:03:49.413 ERROR main.runsample - position= 476856.5682,519896.7134
+20:03:49.413 ERROR main.runsample - **********
+20:03:49.413 ERROR main.runsample - middle-Second: 0.0
+20:03:49.413 ERROR main.runsample - Minutes: 39.222153
+20:03:49.413 ERROR main.runsample - Second: 2353.329
+20:03:49.413 ERROR main.runsample - cross-point 474858.6468 521894.6348
+20:03:49.413 INFO  main.runsample -    
+20:03:49.413 INFO  main.runsample - data0/Gaussian_40w.txt
+20:03:49.413 INFO  main.runsample - *********new query now*********
+20:03:49.413 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 600000 600000
+20:38:38.431 INFO  main.runsample - find_special time start: 1427891918431
+20:38:38.431 INFO  main.runsample - find_special time end: 1427891918431
+20:38:38.431 INFO  main.runsample - find_special time execute0.0
+20:38:38.431 ERROR main.runsample - **********
+20:38:38.431 ERROR main.runsample - I=129.63303675653435
+20:38:38.431 ERROR main.runsample - range= length:3995.842799999984width:3995.842799999984
+20:38:38.431 ERROR main.runsample - position= 476856.5682,519896.7134
+20:38:38.431 ERROR main.runsample - **********
+20:38:38.431 ERROR main.runsample - middle-Second: 0.0
+20:38:38.431 ERROR main.runsample - Minutes: 34.816967
+20:38:38.431 ERROR main.runsample - Second: 2089.018
+20:38:38.431 ERROR main.runsample - cross-point 474858.6468 521894.6348
+20:38:38.431 INFO  main.runsample -    
+20:38:38.431 INFO  main.runsample - data0/Gaussian_40w.txt
+20:38:38.431 INFO  main.runsample - *********new query now*********
+20:38:38.431 INFO  main.runsample - 1 2000 2000 470000 530000 4000 4000 0.00001 0.000001 600000 600000
+21:15:49.829 INFO  main.runsample - find_special time start: 1427894149829
+21:15:49.829 INFO  main.runsample - find_special time end: 1427894149829
+21:15:49.829 INFO  main.runsample - find_special time execute0.0
+21:15:49.829 ERROR main.runsample - **********
+21:15:49.829 ERROR main.runsample - I=130.06679800939588
+21:15:49.829 ERROR main.runsample - range= length:3976.5771999999997width:3976.5771999999997
+21:15:49.829 ERROR main.runsample - position= 476466.42909999995,519887.0806
+21:15:49.829 ERROR main.runsample - **********
+21:15:49.829 ERROR main.runsample - middle-Second: 0.0
+21:15:49.845 ERROR main.runsample - Minutes: 37.189964
+21:15:49.845 ERROR main.runsample - Second: 2231.398
+21:15:49.845 ERROR main.runsample - cross-point 478454.7177 517898.792
+21:15:49.845 INFO  main.runsample -    
+21:15:49.845 INFO  main.runsample - data0/Gaussian_40w.txt
+21:15:49.845 INFO  main.runsample - *********new query now*********
+21:15:49.845 INFO  main.runsample - 1 2000 2000 540000 540000 4000 4000 0.00001 0.000001 600000 600000
+21:56:30.128 INFO  main.runsample - find_special time start: 1427896590128
+21:56:30.128 INFO  main.runsample - find_special time end: 1427896590128
+21:56:30.128 INFO  main.runsample - find_special time execute0.0
+21:56:30.128 ERROR main.runsample - **********
+21:56:30.128 ERROR main.runsample - I=128.69155109660943
+21:56:30.128 ERROR main.runsample - range= length:3954.9873999999836width:3954.9873999999836
+21:56:30.128 ERROR main.runsample - position= 476463.2879,519859.9181
+21:56:30.128 ERROR main.runsample - **********
+21:56:30.128 ERROR main.runsample - middle-Second: 0.0
+21:56:30.128 ERROR main.runsample - Minutes: 40.671383
+21:56:30.128 ERROR main.runsample - Second: 2440.283
+21:56:30.128 ERROR main.runsample - cross-point 474485.7942 517882.4244
+21:56:30.128 INFO  main.runsample -    
+21:56:30.128 INFO  main.runsample - data0/Gaussian_40w.txt
+21:56:30.128 INFO  main.runsample - *********new query now*********
+21:56:30.128 INFO  main.runsample - 1 2000 2000 550000 450000 4000 4000 0.00001 0.000001 600000 600000
+22:42:28.650 INFO  main.runsample - find_special time start: 1427899348650
+22:42:28.650 INFO  main.runsample - find_special time end: 1427899348650
+22:42:28.650 INFO  main.runsample - find_special time execute0.0
+22:42:28.650 ERROR main.runsample - **********
+22:42:28.650 ERROR main.runsample - I=129.02153323757057
+22:42:28.650 ERROR main.runsample - range= length:3995.842799999984width:3995.842799999984
+22:42:28.650 ERROR main.runsample - position= 476856.5682,519896.7134
+22:42:28.650 ERROR main.runsample - **********
+22:42:28.650 ERROR main.runsample - middle-Second: 0.0
+22:42:28.650 ERROR main.runsample - Minutes: 45.975365
+22:42:28.650 ERROR main.runsample - Second: 2758.522
+22:42:28.650 ERROR main.runsample - cross-point 474858.6468 521894.6348
+11:17:55.970 INFO  main.runsample -    
+11:17:55.970 INFO  main.runsample - data0/Gaussian_40w.txt
+11:17:55.970 INFO  main.runsample - *********new query now*********
+11:17:55.970 INFO  main.runsample - 1 2000 2000 500000 500000 4000 4000 0.00001 0.000001 4000 4000
+11:18:13.707 INFO  main.runsample - find_special time start: 1428117493707
+11:18:13.707 INFO  main.runsample - find_special time end: 1428117493707
+11:18:13.723 INFO  main.runsample - find_special time execute0.0
+11:18:13.723 ERROR main.runsample - **********
+11:18:13.723 ERROR main.runsample - I=129.7280358551385
+11:18:13.723 ERROR main.runsample - range= length:3995.842799999984width:3995.842799999984
+11:18:13.723 ERROR main.runsample - position= 476856.5682,519896.7134
+11:18:13.723 ERROR main.runsample - **********
+11:18:13.723 ERROR main.runsample - middle-Second: 0.094
+11:18:13.723 ERROR main.runsample - Minutes: 0.29588333
+11:18:13.723 ERROR main.runsample - Second: 17.753
+11:18:13.723 ERROR main.runsample - cross-point 474858.6468 521894.6348
+11:18:13.723 INFO  main.runsample -    
+11:18:13.723 INFO  main.runsample - data0/Gaussian_40w.txt
+11:18:13.723 INFO  main.runsample - *********new query now*********
+11:18:13.723 INFO  main.runsample - 1 2000 2000 510000 510000 4000 4000 0.00001 0.000001 4000 4000
+11:18:29.252 INFO  main.runsample - find_special time start: 1428117509252
+11:18:29.267 INFO  main.runsample - find_special time end: 1428117509267
+11:18:29.267 INFO  main.runsample - find_special time execute0.015
+11:18:29.267 ERROR main.runsample - **********
+11:18:29.267 ERROR main.runsample - I=128.8920605610904
+11:18:29.267 ERROR main.runsample - range= length:3988.355099999986width:3988.355099999986
+11:18:29.267 ERROR main.runsample - position= 489986.21624999994,511819.30625
+11:18:29.267 ERROR main.runsample - **********
+11:18:29.267 ERROR main.runsample - middle-Second: 0.0
+11:18:29.267 ERROR main.runsample - Minutes: 0.25906667
+11:18:29.267 ERROR main.runsample - Second: 15.544
+11:18:29.267 ERROR main.runsample - cross-point 487992.0387 513813.4838
+11:18:29.267 INFO  main.runsample -    
+11:18:29.267 INFO  main.runsample - data0/Gaussian_40w.txt
+11:18:29.267 INFO  main.runsample - *********new query now*********
+11:18:29.267 INFO  main.runsample - 1 2000 2000 520000 490000 4000 4000 0.00001 0.000001 4000 4000
+11:18:45.461 INFO  main.runsample - find_special time start: 1428117525461
+11:18:45.461 INFO  main.runsample - find_special time end: 1428117525461
+11:18:45.461 INFO  main.runsample - find_special time execute0.0
+11:18:45.461 ERROR main.runsample - **********
+11:18:45.461 ERROR main.runsample - I=129.5083432630573
+11:18:45.461 ERROR main.runsample - range= length:3995.842799999984width:3995.842799999984
+11:18:45.461 ERROR main.runsample - position= 476856.5682,519896.7134
+11:18:45.461 ERROR main.runsample - **********
+11:18:45.461 ERROR main.runsample - middle-Second: 0.0
+11:18:45.461 ERROR main.runsample - Minutes: 0.2699
+11:18:45.461 ERROR main.runsample - Second: 16.194
+11:18:45.461 ERROR main.runsample - cross-point 474858.6468 521894.6348
+11:18:45.461 INFO  main.runsample -    
+11:18:45.461 INFO  main.runsample - data0/Gaussian_40w.txt
+11:18:45.461 INFO  main.runsample - *********new query now*********
+11:18:45.461 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 4000 4000
+11:19:01.702 INFO  main.runsample - find_special time start: 1428117541702
+11:19:01.702 INFO  main.runsample - find_special time end: 1428117541702
+11:19:01.702 INFO  main.runsample - find_special time execute0.0
+11:19:01.702 ERROR main.runsample - **********
+11:19:01.702 ERROR main.runsample - I=129.63303675653435
+11:19:01.702 ERROR main.runsample - range= length:3995.842799999984width:3995.842799999984
+11:19:01.702 ERROR main.runsample - position= 476856.5682,519896.7134
+11:19:01.702 ERROR main.runsample - **********
+11:19:01.702 ERROR main.runsample - middle-Second: 0.0
+11:19:01.702 ERROR main.runsample - Minutes: 0.27068332
+11:19:01.702 ERROR main.runsample - Second: 16.241
+11:19:01.702 ERROR main.runsample - cross-point 474858.6468 521894.6348
+11:19:01.702 INFO  main.runsample -    
+11:19:01.702 INFO  main.runsample - data0/Gaussian_40w.txt
+11:19:01.702 INFO  main.runsample - *********new query now*********
+11:19:01.702 INFO  main.runsample - 1 2000 2000 470000 530000 4000 4000 0.00001 0.000001 4000 4000
+11:19:17.958 INFO  main.runsample - find_special time start: 1428117557958
+11:19:17.958 INFO  main.runsample - find_special time end: 1428117557958
+11:19:17.958 INFO  main.runsample - find_special time execute0.0
+11:19:17.958 ERROR main.runsample - **********
+11:19:17.958 ERROR main.runsample - I=128.77291981959132
+11:19:17.958 ERROR main.runsample - range= length:3994.6083000000217width:3994.6083000000217
+11:19:17.958 ERROR main.runsample - position= 489989.34285,511822.43285
+11:19:17.958 ERROR main.runsample - **********
+11:19:17.958 ERROR main.runsample - middle-Second: 0.015
+11:19:17.958 ERROR main.runsample - Minutes: 0.27093333
+11:19:17.958 ERROR main.runsample - Second: 16.256
+11:19:17.958 ERROR main.runsample - cross-point 491986.647 509825.1287
+11:19:17.958 INFO  main.runsample -    
+11:19:17.958 INFO  main.runsample - data0/Gaussian_40w.txt
+11:19:17.958 INFO  main.runsample - *********new query now*********
+11:19:17.958 INFO  main.runsample - 1 2000 2000 540000 540000 4000 4000 0.00001 0.000001 4000 4000
+11:19:34.058 INFO  main.runsample - find_special time start: 1428117574058
+11:19:34.058 INFO  main.runsample - find_special time end: 1428117574058
+11:19:34.058 INFO  main.runsample - find_special time execute0.0
+11:19:34.058 ERROR main.runsample - **********
+11:19:34.058 ERROR main.runsample - I=128.53526812756147
+11:19:34.058 ERROR main.runsample - range= length:3974.9902width:3974.9902
+11:19:34.058 ERROR main.runsample - position= 476705.497,519869.9195
+11:19:34.058 ERROR main.runsample - **********
+11:19:34.058 ERROR main.runsample - middle-Second: 0.016
+11:19:34.058 ERROR main.runsample - Minutes: 0.26833335
+11:19:34.058 ERROR main.runsample - Second: 16.1
+11:19:34.058 ERROR main.runsample - cross-point 474718.0019 517882.4244
+11:19:34.058 INFO  main.runsample -    
+11:19:34.058 INFO  main.runsample - data0/Gaussian_40w.txt
+11:19:34.058 INFO  main.runsample - *********new query now*********
+11:19:34.058 INFO  main.runsample - 1 2000 2000 550000 450000 4000 4000 0.00001 0.000001 4000 4000
+11:19:50.471 INFO  main.runsample - find_special time start: 1428117590471
+11:19:50.471 INFO  main.runsample - find_special time end: 1428117590471
+11:19:50.471 INFO  main.runsample - find_special time execute0.0
+11:19:50.471 ERROR main.runsample - **********
+11:19:50.471 ERROR main.runsample - I=128.23143895941558
+11:19:50.471 ERROR main.runsample - range= length:3988.355099999986width:3988.355099999986
+11:19:50.471 ERROR main.runsample - position= 489986.21624999994,511819.30625
+11:19:50.486 ERROR main.runsample - **********
+11:19:50.486 ERROR main.runsample - middle-Second: 0.016
+11:19:50.486 ERROR main.runsample - Minutes: 0.27355
+11:19:50.486 ERROR main.runsample - Second: 16.413
+11:19:50.486 ERROR main.runsample - cross-point 487992.0387 513813.4838
+11:20:07.491 INFO  main.runsample -    
+11:20:07.491 INFO  main.runsample - data0/Gaussian_40w.txt
+11:20:07.491 INFO  main.runsample - *********new query now*********
+11:20:07.491 INFO  main.runsample - 1 2000 2000 500000 500000 4000 4000 0.00001 0.000001 4000 4000
+11:20:43.917 INFO  main.runsample - find_special time start: 1428117643902
+11:20:43.917 INFO  main.runsample - find_special time end: 1428117643917
+11:20:43.917 INFO  main.runsample - find_special time execute0.015
+11:20:43.917 ERROR main.runsample - **********
+11:20:43.917 ERROR main.runsample - I=129.7280358551385
+11:20:43.917 ERROR main.runsample - range= length:3995.842799999984width:3995.842799999984
+11:20:43.917 ERROR main.runsample - position= 476856.5682,519896.7134
+11:20:43.917 ERROR main.runsample - **********
+11:20:43.917 ERROR main.runsample - middle-Second: 0.031
+11:20:43.917 ERROR main.runsample - Minutes: 0.60709995
+11:20:43.917 ERROR main.runsample - Second: 36.426
+11:20:43.917 ERROR main.runsample - cross-point 474858.6468 521894.6348
+11:20:43.917 INFO  main.runsample -    
+11:20:43.917 INFO  main.runsample - data0/Gaussian_40w.txt
+11:20:43.917 INFO  main.runsample - *********new query now*********
+11:20:43.917 INFO  main.runsample - 1 2000 2000 510000 510000 4000 4000 0.00001 0.000001 4000 4000
+11:21:18.739 INFO  main.runsample - find_special time start: 1428117678739
+11:21:18.739 INFO  main.runsample - find_special time end: 1428117678739
+11:21:18.739 INFO  main.runsample - find_special time execute0.0
+11:21:18.739 ERROR main.runsample - **********
+11:21:18.739 ERROR main.runsample - I=128.8920605610904
+11:21:18.739 ERROR main.runsample - range= length:3988.355099999986width:3988.355099999986
+11:21:18.739 ERROR main.runsample - position= 489986.21624999994,511819.30625
+11:21:18.739 ERROR main.runsample - **********
+11:21:18.739 ERROR main.runsample - middle-Second: 0.0
+11:21:18.739 ERROR main.runsample - Minutes: 0.5803667
+11:21:18.739 ERROR main.runsample - Second: 34.822
+11:21:18.739 ERROR main.runsample - cross-point 487992.0387 513813.4838
+11:21:18.739 INFO  main.runsample -    
+11:21:18.739 INFO  main.runsample - data0/Gaussian_40w.txt
+11:21:18.739 INFO  main.runsample - *********new query now*********
+11:21:18.739 INFO  main.runsample - 1 2000 2000 520000 490000 4000 4000 0.00001 0.000001 4000 4000
+11:21:53.062 INFO  main.runsample - find_special time start: 1428117713062
+11:21:53.062 INFO  main.runsample - find_special time end: 1428117713062
+11:21:53.062 INFO  main.runsample - find_special time execute0.0
+11:21:53.062 ERROR main.runsample - **********
+11:21:53.062 ERROR main.runsample - I=129.5083432630573
+11:21:53.062 ERROR main.runsample - range= length:3995.842799999984width:3995.842799999984
+11:21:53.062 ERROR main.runsample - position= 476856.5682,519896.7134
+11:21:53.062 ERROR main.runsample - **********
+11:21:53.062 ERROR main.runsample - middle-Second: 0.0
+11:21:53.062 ERROR main.runsample - Minutes: 0.57205003
+11:21:53.062 ERROR main.runsample - Second: 34.323
+11:21:53.062 ERROR main.runsample - cross-point 474858.6468 521894.6348
+11:21:53.062 INFO  main.runsample -    
+11:21:53.062 INFO  main.runsample - data0/Gaussian_40w.txt
+11:21:53.062 INFO  main.runsample - *********new query now*********
+11:21:53.062 INFO  main.runsample - 1 2000 2000 480000 480000 4000 4000 0.00001 0.000001 4000 4000
+11:22:28.178 INFO  main.runsample - find_special time start: 1428117748178
+11:22:28.178 INFO  main.runsample - find_special time end: 1428117748178
+11:22:28.178 INFO  main.runsample - find_special time execute0.0
+11:22:28.178 ERROR main.runsample - **********
+11:22:28.178 ERROR main.runsample - I=129.63303675653435
+11:22:28.178 ERROR main.runsample - range= length:3995.842799999984width:3995.842799999984
+11:22:28.178 ERROR main.runsample - position= 476856.5682,519896.7134
+11:22:28.178 ERROR main.runsample - **********
+11:22:28.178 ERROR main.runsample - middle-Second: 0.0
+11:22:28.178 ERROR main.runsample - Minutes: 0.5852667
+11:22:28.178 ERROR main.runsample - Second: 35.116
+11:22:28.178 ERROR main.runsample - cross-point 474858.6468 521894.6348
+11:22:28.178 INFO  main.runsample -    
+11:22:28.178 INFO  main.runsample - data0/Gaussian_40w.txt
+11:22:28.178 INFO  main.runsample - *********new query now*********
+11:22:28.178 INFO  main.runsample - 1 2000 2000 470000 530000 4000 4000 0.00001 0.000001 4000 4000
+11:23:02.702 INFO  main.runsample - find_special time start: 1428117782702
+11:23:02.702 INFO  main.runsample - find_special time end: 1428117782702
+11:23:02.702 INFO  main.runsample - find_special time execute0.0
+11:23:02.702 ERROR main.runsample - **********
+11:23:02.702 ERROR main.runsample - I=128.77291981959132
+11:23:02.702 ERROR main.runsample - range= length:3994.6083000000217width:3994.6083000000217
+11:23:02.702 ERROR main.runsample - position= 489989.34285,511822.43285
+11:23:02.702 ERROR main.runsample - **********
+11:23:02.702 ERROR main.runsample - middle-Second: 0.016
+11:23:02.702 ERROR main.runsample - Minutes: 0.5754
+11:23:02.702 ERROR main.runsample - Second: 34.524
+11:23:02.702 ERROR main.runsample - cross-point 491986.647 509825.1287
+11:23:02.702 INFO  main.runsample -    
+11:23:02.702 INFO  main.runsample - data0/Gaussian_40w.txt
+11:23:02.702 INFO  main.runsample - *********new query now*********
+11:23:02.702 INFO  main.runsample - 1 2000 2000 540000 540000 4000 4000 0.00001 0.000001 4000 4000
+11:23:37.242 INFO  main.runsample - find_special time start: 1428117817242
+11:23:37.242 INFO  main.runsample - find_special time end: 1428117817242
+11:23:37.242 INFO  main.runsample - find_special time execute0.0
+11:23:37.242 ERROR main.runsample - **********
+11:23:37.242 ERROR main.runsample - I=128.53526812756147
+11:23:37.242 ERROR main.runsample - range= length:3974.9902width:3974.9902
+11:23:37.242 ERROR main.runsample - position= 476705.497,519869.9195
+11:23:37.242 ERROR main.runsample - **********
+11:23:37.242 ERROR main.runsample - middle-Second: 0.0
+11:23:37.242 ERROR main.runsample - Minutes: 0.57566667
+11:23:37.242 ERROR main.runsample - Second: 34.54
+11:23:37.242 ERROR main.runsample - cross-point 474718.0019 517882.4244
+11:23:37.242 INFO  main.runsample -    
+11:23:37.242 INFO  main.runsample - data0/Gaussian_40w.txt
+11:23:37.242 INFO  main.runsample - *********new query now*********
+11:23:37.242 INFO  main.runsample - 1 2000 2000 550000 450000 4000 4000 0.00001 0.000001 4000 4000
+11:24:12.327 INFO  main.runsample - find_special time start: 1428117852327
+11:24:12.327 INFO  main.runsample - find_special time end: 1428117852327
+11:24:12.327 INFO  main.runsample - find_special time execute0.0
+11:24:12.327 ERROR main.runsample - **********
+11:24:12.327 ERROR main.runsample - I=128.23143895941558
+11:24:12.327 ERROR main.runsample - range= length:3988.355099999986width:3988.355099999986
+11:24:12.327 ERROR main.runsample - position= 489986.21624999994,511819.30625
+11:24:12.327 ERROR main.runsample - **********
+11:24:12.327 ERROR main.runsample - middle-Second: 0.0
+11:24:12.327 ERROR main.runsample - Minutes: 0.58475
+11:24:12.327 ERROR main.runsample - Second: 35.085
+11:24:12.327 ERROR main.runsample - cross-point 487992.0387 513813.4838

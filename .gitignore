@@ -30,3 +30,5 @@ log4j2.xml
 .classpath
 .project
 .settings/
+*.log
+log/

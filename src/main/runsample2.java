@@ -110,9 +110,13 @@ public class runsample2 {
 		my_query(g_object.grid_top_left  ,2);
 		my_query(g_object.grid_down_left ,3);
 		my_query(g_object.grid_down_right,4);
-//		logger.info("find_special time start"+System.currentTimeMillis());
-//		findspecial();
-//		logger.info("find_special time end"  +System.currentTimeMillis());
+		
+		long specialstart = System.currentTimeMillis();
+		logger.info("find_special time start: "+specialstart);
+		findspecial();
+		long specialend = System.currentTimeMillis();
+		logger.info("find_special time end: "  +specialend);
+		logger.info("find_special time execute"  +(specialend-specialstart));
 	}
 
 	private void findspecial() {

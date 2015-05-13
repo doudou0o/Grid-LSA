@@ -130,7 +130,7 @@ public class runsample {
 		line linex[] = new line[1];
 		line liney[] = new line[1];
 
-		calculation calcu = new calculation(aerfa, beita);
+		calculation calcu = calculation.getInstance();
 
 		int maxnum = subgrid.length * subgrid[0].length;
 		for (int index = 0; index < maxnum; index++) {
@@ -572,7 +572,7 @@ public class runsample {
 				}else{
 					if( 2*codis > cur_Range[0] || original_Range[0]>cur_Range[0])break;
 				}
-				double cur_score = new calculation().calculate_score(righttop,leftdown,
+				double cur_score = calculation.getInstance().calculate_score(righttop,leftdown,
 						original_position, original_Range, cur_Range,cur_value);
 				if (cur_score > I) {
 					recordbest(cur_score, cur_Range, righttop, leftdown);//r1/r2

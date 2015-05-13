@@ -89,7 +89,7 @@ public class Grid {
 	public void delete() {		
 	}
 	public void updatescore(double aerfa,double beita) {
-		calculation cal = new calculation(aerfa, beita);
+		calculation cal = calculation.getInstance();
 		if (grid_top_right != null){
 		for (int i = 0; i < grid_top_right.length; i++) {
 			GNode [] grid_row = grid_top_right[i];
@@ -173,7 +173,7 @@ public class Grid {
 				subgrid_G[i][j] = new GNode();
 				if(0 != i )y_dis=y_Interval* i - Max_Range[1]*0.5;
 				if(0 != j )x_dis=x_Interval* j - Max_Range[0]*0.5;
-				dis = new calculation().distance_cal(x_dis,y_dis);
+				dis = calculation.getInstance().getEuclideanDistance(x_dis,y_dis);
 				subgrid_G[i][j].initdistance(dis);
 				
 				double far1 = x_Interval * (j+1) * isright + CENTRE[0];

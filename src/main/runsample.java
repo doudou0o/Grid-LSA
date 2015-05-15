@@ -84,9 +84,9 @@ public class runsample {
 			long middle = System.currentTimeMillis();
 
 			readfile(datafile);
-			g_object.updatescore(aerfa, beita);
 
 			Grid_LSA();
+			
 			long end = System.currentTimeMillis();
 
 			logger.error("**********");

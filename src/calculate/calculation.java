@@ -16,6 +16,10 @@ public class calculation {
 		return cal;
 	}
 	
+	public double calculate_score(double size, double value){
+		return value - size * beita;
+	}
+	
 	public double calculate_score(double[] r1, double[] r2,double[] original_position,
 			double[] original_Range, double[] cur_Range,  int value) {
 		return value - calculate_planty(r1, r2,original_position, original_Range, cur_Range);
@@ -30,6 +34,7 @@ public class calculation {
 		double y_dis = Math.abs(pointx[1] - pointy[1]);
 		return getEuclideanDistance(x_dis, y_dis);
 	}
+	
 	public double getEuclideanDistance(double x_dis, double y_dis) {
 		return Math.sqrt(Math.pow(x_dis, 2)+Math.pow(y_dis, 2));
 	}
